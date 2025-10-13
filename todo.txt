@@ -1,0 +1,19 @@
+-> UseState
+-> UseEffect
+-> Custom HOok
+-> Use Reducer
+-> Use Ref
+-> Use Optimistic
+-> Use Suspense
+-> Context
+-> use (non hook)
+
+-> React Router
+
+-> Lint & Fortmat validator
+
+Shadcn
+Tailwind
+Zod
+sonner (Exceptions toast)
+
