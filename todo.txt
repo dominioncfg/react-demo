@@ -1,16 +1,18 @@
--> UseState
--> UseEffect
--> Custom HOok
--> Use Reducer
--> Use Ref
--> Use Optimistic
--> Use Suspense
--> Context
+Hooks:
+    -> Custom Hook - Ok
+    -> UseState - Ok
+    -> UseEffect
+    -> Context
+    -> Use Reducer
+    -> Use Ref
+    -> Use Optimistic
+    -> Use Suspense
 -> use (non hook)
 
 -> React Router
 
 -> Lint & Fortmat validator
+-> Testing
 
 Shadcn
 Tailwind

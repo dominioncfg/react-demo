@@ -12,16 +12,15 @@ export const MyButton = ({
   disabled = false,
 }: MyButtonProps
 ) => {
-  const baseStyle = "px-4 py-2 rounded-md font-semibold transition-colors duration-200";
   const variantStyle =
     variant === "primary"
-      ? "bg-blue-600 text-white hover:bg-blue-700"
-      : "bg-gray-200 text-black hover:bg-gray-300";
+      ? "primatry"
+      : "secondary";
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyle} ${variantStyle} ${
+      className={`${variantStyle} ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
       }`}
     >
