@@ -1,27 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export interface MyCustomToggleProps {
-    initialState?: boolean;
+    isChecked: boolean;
     label: string;
     onCheckChanged?: (checked: boolean) => void;
 }
 
 
 export const MyCustomToggleComponent = ({
-    initialState = false,
+    isChecked = false,
     label,
     onCheckChanged
 }: MyCustomToggleProps) => {
-    const [isChecked, setIsChecked] = useState(initialState);
+    const [isCheckedState, setIsChecked] = useState(isChecked);
+
+    useEffect(() => {
+        setIsChecked(isChecked);
+    }, [isChecked]);
 
     return (
         <div>
             <label>
                 <input
                     type="checkbox"
-                    checked={isChecked}
+                    checked={isCheckedState}
                     onChange={() => {
-                        const newChecked = !isChecked;
+                        const newChecked = !isCheckedState;
                         setIsChecked(newChecked);
                         onCheckChanged?.(newChecked);
                     }}
