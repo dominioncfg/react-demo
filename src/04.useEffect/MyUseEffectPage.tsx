@@ -25,7 +25,6 @@ export const MyUseEffectPage = () => {
 
   useEffect(() => {
     const savedText = localStorage.getItem('useEffect.Text');
-    console.log('Saved text from local storage:', savedText);
     if (savedText) {
       setText(savedText);
     }
