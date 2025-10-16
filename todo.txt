@@ -5,7 +5,7 @@ Hooks:
     -> Context - Done
     -> use (Non hook) - Done
     -> Use Ref - Done
-    -> Use Reducer
+    -> Use Reducer - Done
     -> Use Optimistic
     -> Use Suspense
 
