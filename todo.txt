@@ -1,13 +1,13 @@
 Hooks:
-    -> Custom Hook - Ok
-    -> UseState - Ok
-    -> UseEffect - Ok
-    -> Context
+    -> Custom Hook - Done
+    -> UseState - Done
+    -> UseEffect - Done
+    -> Context - Done
+    -> use (Non hook) -> Done
     -> Use Reducer
     -> Use Ref
     -> Use Optimistic
     -> Use Suspense
--> use (non hook)
 
 -> React Router
 

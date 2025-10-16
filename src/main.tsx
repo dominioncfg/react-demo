@@ -2,12 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './App.css'
-import { MyUseEffectPage } from './04.useEffect/MyUseEffectPage.tsx'
+import { MyContextWrapperPage } from './05.ContextApi/MyContextWrapperPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div>
-        <MyUseEffectPage/>
+        <MyContextWrapperPage/>
     </div>
   </StrictMode>,
 )
