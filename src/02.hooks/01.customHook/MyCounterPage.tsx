@@ -1,4 +1,4 @@
-import { MyButton } from "../01.component/MyButton"
+import { MyButton } from "../../01.component/MyButton";
 import { useButtonCount } from "./MyCustomHook"
 
 
