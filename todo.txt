@@ -6,6 +6,8 @@ Hooks:
     -> use (Non hook) - Done
     -> Use Ref - Done
     -> Use Reducer - Done
+    -> Use Memo  - Done
+    -> Use Callback
     -> Use Optimistic
     -> Use Suspense
 
