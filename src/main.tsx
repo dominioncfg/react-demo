@@ -2,12 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './App.css'
-import { MyUseCallbackPage } from './09.useCallback/MyUseCallbackPage'
+import { MyUseOptimisticPage } from './hooks/09.useOptimistic/MyUseOptimisticPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div>
-        <MyUseCallbackPage/>
+        <MyUseOptimisticPage/>
     </div>
   </StrictMode>,
 )

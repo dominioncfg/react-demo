@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react"
-import { MyButton } from "../01.component/MyButton"
+import { MyButton } from "../../01.component/MyButton"
 import { UserRow } from "./MyUserRow";
 
 export const MyUseCallbackPage = () => {

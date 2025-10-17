@@ -2,13 +2,12 @@ Hooks:
     -> Custom Hook - Done
     -> UseState - Done
     -> UseEffect - Done
-    -> Context - Done
-    -> use (Non hook) - Done
+    -> Context and use()- Done
     -> Use Ref - Done
     -> Use Reducer - Done
     -> Use Memo - Done
     -> Use Callback - Done
-    -> Use Optimistic
+    -> Use Optimistic - Done
     -> Use Suspense
 
 -> React Router

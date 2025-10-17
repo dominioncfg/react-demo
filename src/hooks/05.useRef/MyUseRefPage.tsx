@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { MyButton } from "../01.component/MyButton";
+import { MyButton } from "../../01.component/MyButton";
 
 export const MyUseRefPage = () => {
     const inputRef = useRef<HTMLInputElement>(null); 

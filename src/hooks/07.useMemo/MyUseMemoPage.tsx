@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react"
-import { MyButton } from "../01.component/MyButton"
+import { MyButton } from "../../01.component/MyButton"
 
 const users = [
     "Alice",

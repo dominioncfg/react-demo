@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { MyButton } from "../01.component/MyButton";
-import { MyCustomToggleComponent } from "../03.useState/MyCustomToggle";
+import { MyButton } from "../../01.component/MyButton";
+import { MyCustomToggleComponent } from "../02.useState/MyCustomToggle";
 
 export const MyUseEffectPage = () => {
   const [text, setText] = useState('');

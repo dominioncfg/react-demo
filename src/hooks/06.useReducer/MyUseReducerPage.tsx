@@ -1,5 +1,5 @@
 import { useReducer, useState } from "react"
-import { MyButton } from "../01.component/MyButton"
+import { MyButton } from "../../01.component/MyButton"
 import { getTasknItialState, taskListReducer } from "./reducer"
 
 
