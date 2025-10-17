@@ -8,7 +8,7 @@ Hooks:
     -> Use Memo - Done
     -> Use Callback - Done
     -> Use Optimistic - Done
-    -> Use Suspense
+    -> Use Suspense - Done
 
 -> React Router
 
