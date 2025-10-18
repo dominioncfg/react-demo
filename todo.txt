@@ -10,13 +10,14 @@ Hooks:
     -> Use Optimistic - Done
     -> Use Suspense - Done
 
--> React Router
-
--> Lint & Fortmat validator
--> Testing
-
+React Router
+    -> Core Routing Basics - Done
+    -> Navigation - Done
+    -> Error Handling - Done
+Sonner (Exceptions toast)
+Lint & Fortmat Validator
+Unit Testing
+Zod
 Shadcn
 Tailwind
-Zod
-sonner (Exceptions toast)
 
