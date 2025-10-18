@@ -14,10 +14,13 @@ React Router
     -> Core Routing Basics - Done
     -> Navigation - Done
     -> Error Handling - Done
-Sonner (Exceptions toast)
+
+Sonner -> Done
+
 Lint & Fortmat Validator
 Unit Testing
 Zod
+React Query
 Shadcn
 Tailwind
 
