@@ -1,14 +1,12 @@
-import { MyContextPage } from "./MyContextPage";
-import { ThemeContextProvider } from "./ThemeContext"
-
+import { MyContextPage } from './MyContextPage';
+import { ThemeContextProvider } from './ThemeContext';
 
 export const MyContextWrapperPage = () => {
-    return (
-        <div>
-            <ThemeContextProvider>
-                <MyContextPage />
-            </ThemeContextProvider>
-        </div>
-    )
+  return (
+    <div>
+      <ThemeContextProvider>
+        <MyContextPage />
+      </ThemeContextProvider>
+    </div>
+  );
 };
-

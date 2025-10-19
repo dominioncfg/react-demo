@@ -1,40 +1,39 @@
-import { useGetUsers } from "./hooks/useUsers";
-
+import { useGetUsers } from './hooks/useUsers';
 
 export const UserList = () => {
-    const users = useGetUsers();
+  const users = useGetUsers();
 
-    return (
-        <>
-            {users.isLoading && (
-                <div>
-                    <h3>Loading...</h3>
-                </div>
-            )}
+  return (
+    <>
+      {users.isLoading && (
+        <div>
+          <h3>Loading...</h3>
+        </div>
+      )}
 
-            {users.data && (
-                <div>
-                    <h2>Your Users (1)</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Full Name</th>
-                                <th>Age</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {users.data?.map(u => (
-                                <tr key={u.id}>
-                                    <td>{u.id}</td>
-                                    <td>{u.fullName}</td>
-                                    <td>{u.age}</td>
-                                </tr>
-                            ))}
-
-                        </tbody>
-                    </table>
-                </div>
-            )}
-        </>)
-}
+      {users.data && (
+        <div>
+          <h2>Your Users (1)</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Full Name</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              {users.data?.map((u) => (
+                <tr key={u.id}>
+                  <td>{u.id}</td>
+                  <td>{u.fullName}</td>
+                  <td>{u.age}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </>
+  );
+};

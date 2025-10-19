@@ -1,10 +1,10 @@
 export const HomePage = () => {
-   return (<div>
+  return (
+    <div>
       <div>
-         <h2>Home Page</h2>
-         <p>Welcome to the routed app page.</p>
+        <h2>Home Page</h2>
+        <p>Welcome to the routed app page.</p>
       </div>
-   </div>
-
-   );
-}
+    </div>
+  );
+};

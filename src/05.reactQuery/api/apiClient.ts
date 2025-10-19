@@ -1,6 +1,8 @@
-import axios, { type CreateAxiosDefaults } from "axios";
+import axios, { type CreateAxiosDefaults } from 'axios';
 
-const axiosConfig: CreateAxiosDefaults = { baseURL: 'https://localhost:7227/api' };
-const usersApiClient = axios.create(axiosConfig)
+const axiosConfig: CreateAxiosDefaults = {
+  baseURL: 'https://localhost:7227/api',
+};
+const usersApiClient = axios.create(axiosConfig);
 
-export {usersApiClient}
+export { usersApiClient };
