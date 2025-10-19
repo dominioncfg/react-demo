@@ -22,7 +22,8 @@ React Query
     - Mutation -> Done
     - General Configuration -> Done
 
-Lint & Format Validator
+Lint & Format Validator -> Done
+  
 Unit Testing
 Zod
 Shadcn

@@ -26,6 +26,7 @@ export default defineConfig([
       '@tanstack/query': pluginQuery,
     },
     rules: {
+      ...prettier.configs.recommended.rules, // 👈
       '@tanstack/query/exhaustive-deps': 'error'
     },
   },
