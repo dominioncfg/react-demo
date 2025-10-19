@@ -24,7 +24,11 @@ React Query
 
 Lint & Format Validator -> Done
   
-Unit Testing
+Unit Testing 
+    -> Setup -> Done
+    -> Single Component Test
+    -> Router
+    -> Component  With Mock Query
 Zod
 Shadcn
 Tailwind
