@@ -17,10 +17,14 @@ React Router
 
 Sonner -> Done
 
-Lint & Fortmat Validator
+React Query
+    - Query -> Done
+    - Mutation -> Done
+    - General Configuration -> Done
+
+Lint & Format Validator
 Unit Testing
 Zod
-React Query
 Shadcn
 Tailwind
 
