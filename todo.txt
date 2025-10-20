@@ -27,7 +27,7 @@ Lint & Format Validator - Done
 Unit Testing 
     -> Setup - Done
     -> Single Component Test - Done 
-    -> Router
+    -> Router - Done 
     -> Component  With Mock Query
 Zod
 Shadcn
