@@ -39,6 +39,7 @@ export const RootLayout = () => {
             borderRadius: '0px 10px 10px 0px',
           }}
         >
+          <h1>-----------------------------</h1>
           <Outlet />
         </div>
       </div>
