@@ -18,15 +18,15 @@ React Router
 Sonner -> Done
 
 React Query
-    - Query -> Done
-    - Mutation -> Done
-    - General Configuration -> Done
+    - Query - Done
+    - Mutation - Done
+    - General Configuration - Done
 
-Lint & Format Validator -> Done
+Lint & Format Validator - Done
   
 Unit Testing 
-    -> Setup -> Done
-    -> Single Component Test
+    -> Setup - Done
+    -> Single Component Test - Done 
     -> Router
     -> Component  With Mock Query
 Zod
