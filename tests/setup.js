@@ -1,9 +1,13 @@
-import { afterEach } from 'vitest'
-import { cleanup } from '@testing-library/react'
-import '@testing-library/jest-dom/vitest'
+import { beforeAll, afterEach, afterAll } from 'vitest';
+import { cleanup } from '@testing-library/react';
+import '@testing-library/jest-dom/vitest';
 import '@testing-library/jest-dom';
-
-// runs a clean after each test case (e.g. clearing jsdom)
+import { server } from '../src/06.testing/03.reactQuery/mocks/node.js';
+beforeAll(() => server.listen({
+  onUnhandledRequest: 'error',
+}));
 afterEach(() => {
-    cleanup();
-})
+  cleanup();
+  server.resetHandlers();
+});
+afterAll(() => server.close());

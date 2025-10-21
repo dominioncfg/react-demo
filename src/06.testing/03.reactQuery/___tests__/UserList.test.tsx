@@ -1,6 +1,7 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import { UserList } from '../UserList';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { User1 } from '../mocks/userHandlers';
 
 describe('User List Tests', () => {
   it('should render loading screen', () => {
@@ -40,11 +41,7 @@ it('should render user table headers', async () => {
 });
 
 it('should render user', async () => {
-  const expectedUser = {
-    id: 'c37c1f6a-f259-448d-9546-860535cb6e1f',
-    fullName: 'Perico Perez',
-    age: 18,
-  };
+  const expectedUser = User1;
 
   renderWithProvider();
 
