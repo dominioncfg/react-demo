@@ -18,9 +18,9 @@ React Router
 Sonner -> Done
 
 React Query
-    - Query - Done
-    - Mutation - Done
-    - General Configuration - Done
+    -> Query - Done
+    -> Mutation - Done
+    -> General Configuration - Done
 
 Lint & Format Validator - Done
   
@@ -30,6 +30,16 @@ Unit Testing
     -> Router - Done 
     -> Component  With Mock Query - Done
 Zod
+    -> Schema creation - Done 
+    -> Validation methods - Done 
+    -> Error handling - Done 
+    -> Enums and literals – Done 
+    -> Objects - Done
+    -> Arrays - Done
+    -> Optional, nullable, and default values - Done
+    -> Type inference - Done 
+
+React Form Hook
 Shadcn
 Tailwind
 

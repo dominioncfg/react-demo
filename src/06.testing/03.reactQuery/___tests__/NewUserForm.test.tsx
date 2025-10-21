@@ -2,6 +2,9 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render, screen, waitFor } from '@testing-library/react';
 import { NewUserForm } from '../NewUserForm';
 import userEvent from '@testing-library/user-event';
+import { server } from '../mocks/node';
+import { http, HttpResponse } from 'msw';
+import { error } from 'console';
 
 describe('New User Form Tests', () => {
   it('should render the form', () => {
@@ -60,6 +63,39 @@ describe('New User Form Tests', () => {
       expect(fullNameInput).toHaveValue('');
       expect(ageInput).toHaveValue(18);
     });
+  });
+});
+
+//Does not work as expected
+it('creates the user when the form is submitted with the right values', async () => {
+  server.use(
+    http.post('https://localhost:7227/api/Users', async ({ request }) => {
+      const data = await request.formData();
+      const fullName = data.get('fullName');
+      const age = data.get('age');
+      if (fullName !== 'Full Name') {
+        throw error('SAdsads');
+        return new HttpResponse('Missing Full Name', { status: 400 });
+      }
+
+      if (age !== '18') {
+        return new HttpResponse('Missing age', { status: 400 });
+      }
+    })
+  );
+  renderWithProvider();
+
+  const fullNameInput = screen.getByLabelText('Full Name');
+  const ageInput = screen.getByLabelText('Age');
+  const submitButton = screen.getByText('Create User');
+
+  await userEvent.type(fullNameInput, 'Hola');
+  await userEvent.type(ageInput, '1');
+  await userEvent.click(submitButton);
+
+  await waitFor(() => {
+    expect(fullNameInput).toHaveValue('');
+    expect(ageInput).toHaveValue(null);
   });
 });
 
