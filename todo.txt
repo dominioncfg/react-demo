@@ -28,7 +28,7 @@ Unit Testing
     -> Setup - Done
     -> Single Component Test - Done 
     -> Router - Done 
-    -> Component  With Mock Query
+    -> Component  With Mock Query - Done
 Zod
 Shadcn
 Tailwind
