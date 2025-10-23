@@ -41,7 +41,7 @@ Zod
 
 React Form Hook
     -> Core Concepts - Done
-    -> FormProvider and useFormContext
+    -> FormProvider and useFormContext - Done
     -> Integrate with zod + react Query
 Shadcn
 Tailwind
