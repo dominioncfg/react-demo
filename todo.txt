@@ -40,12 +40,7 @@ Zod
     -> Type inference - Done 
 
 React Form Hook
-    -> Core Concepts: 
-        useForm, register, handleSubmit, watch, 
-        reset, setValue, getValues
-        required, minLength,
-        formState.errors
-        formState object (isDirty, isValid, isSubmitting, etc.)
+    -> Core Concepts - Done
     -> FormProvider and useFormContext
     -> Integrate with zod + react Query
 Shadcn

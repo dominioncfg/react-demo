@@ -18,7 +18,7 @@ export default function MySimpleReactFormHookPage() {
     watch,
     reset,
     getValues,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<FormData>({
     defaultValues: {
       firstName: '',
@@ -27,7 +27,10 @@ export default function MySimpleReactFormHookPage() {
       isGood: false,
     },
   });
-  const onSubmit = handleSubmit((data) => console.log(data));
+  const onSubmit = handleSubmit(async (data) => {
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    console.log(data);
+  });
   const firstName = watch('firstName');
   const lastName = watch('lastName');
   const fullName = firstName || lastName ? `${firstName} ${lastName}` : null;
@@ -60,13 +63,21 @@ export default function MySimpleReactFormHookPage() {
       </div>
       <div>
         <label>Age</label>
-        <input type="number" {...register('age', { min: 18 })} />
+        <input
+          type="number"
+          {...register('age', {
+            min: {
+              value: 18,
+              message: 'Nah go home kid',
+            },
+          })}
+        />
         <p role="alert">{errors.age?.message}</p>
       </div>
       <div>
         <label>Is good</label>
         <input type="checkbox" {...register('isGood')} />
-        <p role="alert"></p>
+        <p role="alert">{errors.isGood?.message}</p>
       </div>
       <div>
         <select {...register('gender')}>
@@ -104,7 +115,7 @@ export default function MySimpleReactFormHookPage() {
         >
           Reset
         </button>
-        <input type="submit" value="Submit" />
+        <input type="submit" disabled={isSubmitting} value="Submit" />
       </div>
     </form>
   );
