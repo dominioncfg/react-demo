@@ -1,5 +1,5 @@
-import MySimpleFormProviderReactFormHookPage from './02.formProvider/MySimpleReactFormHookPage';
+import { MyReactFormHookQueryApp } from './03.reactQuery/MyReactFormHookQueryApp';
 
 export const MyReactHookPage = () => {
-  return <MySimpleFormProviderReactFormHookPage />;
+  return <MyReactFormHookQueryApp />;
 };
