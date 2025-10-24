@@ -29,6 +29,7 @@ Unit Testing
     -> Single Component Test - Done 
     -> Router - Done 
     -> Component  With Mock Query - Done
+
 Zod
     -> Schema creation - Done 
     -> Validation methods - Done 
@@ -37,12 +38,19 @@ Zod
     -> Objects - Done
     -> Arrays - Done
     -> Optional, nullable, and default values - Done
-    -> Type inference - Done 
+    -> Type inference - Done
 
 React Form Hook
     -> Core Concepts - Done
     -> FormProvider and useFormContext - Done
     -> Integrate with zod + react Query - Done
+
+Zustand:
+    -> Simple Store - Done
+    -> Computed Values - Done
+    -> Persist - Done
+    -> Unit Testing
+
 Shadcn
 Tailwind
 
