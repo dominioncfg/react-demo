@@ -15,7 +15,7 @@ export const MySimpleZustandPage = () => {
           <h1>Count: {counter}</h1>
         </div>
         <button onClick={increase}>+</button>
-        <button onClick={() => increaseBy(5)}>+ 5</button>
+        <button onClick={() => increaseBy(5)}>+5</button>
         <button onClick={decrease}>-</button>
         <button onClick={() => decreaseBy(5)}>-5</button>
       </div>
@@ -25,7 +25,7 @@ export const MySimpleZustandPage = () => {
           <h1>Another Count: {anotherCounter}</h1>
         </div>
         <button onClick={anotherIncrease}>+</button>
-        <button onClick={() => anotherIncreaseBy(5)}>+ 5</button>
+        <button onClick={() => anotherIncreaseBy(5)}>+5</button>
         <button onClick={anotherDecrease}>-</button>
         <button onClick={() => anotherDecreaseBy(5)}>-5</button>
       </div>

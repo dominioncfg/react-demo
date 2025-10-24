@@ -49,7 +49,7 @@ Zustand:
     -> Simple Store - Done
     -> Computed Values - Done
     -> Persist - Done
-    -> Unit Testing
+    -> Unit Testing - Done
 
 Shadcn
 Tailwind
