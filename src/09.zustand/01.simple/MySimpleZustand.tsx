@@ -1,13 +1,20 @@
 import { useCounterStore } from './store';
 
-
-
 export const MySimpleZustandPage = () => {
   const {
-    counter, increase, increaseBy, decrease, decreaseBy,
-    anotherCounter, anotherIncrease, anotherIncreaseBy, anotherDecrease, anotherDecreaseBy,
-    sum, reset
-  } = useCounterStore()
+    counter,
+    increase,
+    increaseBy,
+    decrease,
+    decreaseBy,
+    anotherCounter,
+    anotherIncrease,
+    anotherIncreaseBy,
+    anotherDecrease,
+    anotherDecreaseBy,
+    sum,
+    reset,
+  } = useCounterStore();
   return (
     <div>
       <div>

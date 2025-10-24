@@ -1,4 +1,4 @@
-import { MySimpleZustandPage } from "./01.simple/MySimpleZustand"
+import { MySimpleZustandPage } from './01.simple/MySimpleZustand';
 
 export const MyZustandPage = () => {
   return (
@@ -6,5 +6,5 @@ export const MyZustandPage = () => {
       <h1>Zustand Example</h1>
       <MySimpleZustandPage />
     </div>
-  )
-}
+  );
+};

@@ -1,11 +1,11 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import tseslint from 'typescript-eslint'
-import { defineConfig, globalIgnores } from 'eslint/config'
-import pluginQuery from '@tanstack/eslint-plugin-query'
-import prettier from "eslint-plugin-prettier";
+import js from '@eslint/js';
+import globals from 'globals';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import tseslint from 'typescript-eslint';
+import { defineConfig, globalIgnores } from 'eslint/config';
+import pluginQuery from '@tanstack/eslint-plugin-query';
+import prettier from 'eslint-plugin-prettier';
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -27,8 +27,7 @@ export default defineConfig([
     },
     rules: {
       ...prettier.configs.recommended.rules, // 👈
-      '@tanstack/query/exhaustive-deps': 'error'
+      '@tanstack/query/exhaustive-deps': 'error',
     },
   },
-])
-
+]);
