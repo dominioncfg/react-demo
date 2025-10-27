@@ -51,6 +51,14 @@ Zustand:
     -> Persist - Done
     -> Unit Testing - Done
 
+Tailwind:
+   Spacing - Done
+   Sizing - Done
+   Fonts - Done
+   Background Images and Backgroud Gradients - Done
+   Display - Done
+   States: Focus, Active - Done
+   Tables - Done
+   Columns - Done
+   Responsive - Done
 Shadcn
-Tailwind
-
