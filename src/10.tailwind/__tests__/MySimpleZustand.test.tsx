@@ -2,6 +2,7 @@ import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { CounterStoreState } from '../01.basic/store';
 import { MyTailwindPage } from '../MyTailwindPage';
+import { MyBasicsOnTailwindPage } from '../01.basic/MyBasicsOnTailwindPage';
 
 describe('Zudstand Component Counter Test', async () => {
   it('render component by default', () => {
@@ -129,6 +130,6 @@ describe('Zudstand Component Counter Test', async () => {
 const renderWithProvider = () => {
   return {
     user: userEvent.setup(),
-    ...render(<MyTailwindPage />),
+    ...render(<MyBasicsOnTailwindPage />),
   };
 };

@@ -61,4 +61,5 @@ Tailwind:
    Tables - Done
    Columns - Done
    Responsive - Done
+   Flex - 
 Shadcn
