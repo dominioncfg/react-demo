@@ -60,13 +60,12 @@ it('should render user', async () => {
 it('should call showCreate User when Plus button is created', async () => {
   renderWithProvider();
   await waitFor(() => {
+    screen.getByTestId('AddUser');
+  });
+  const button = screen.getByTestId('AddUser');
+  await userEvent.click(button);
 
-    screen.getByTestId('AddUser')
-  })
-  const button = screen.getByTestId('AddUser')
-  await userEvent.click(button)
-
-  expect(onShowCreate).toHaveBeenCalled()
+  expect(onShowCreate).toHaveBeenCalled();
 });
 
 const renderWithProvider = () => {

@@ -5,7 +5,13 @@ import {
 } from '@tanstack/react-query';
 import { UserList } from './UserList';
 import { NewUserForm } from './NewUserForm';
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+} from '@/components/ui/sheet';
 import { useState } from 'react';
 
 const options: QueryClientConfig = {
@@ -25,14 +31,19 @@ export const MyChadCnReactFormHookQueryApp = () => {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-svh flex-col items-center justify-center gap-4">
         <UserList onShowCreate={() => setCreateIsOpen(true)} />
-        <Sheet open={createIsOpen} onOpenChange={(isOpen) => setCreateIsOpen(isOpen)}>
+        <Sheet
+          open={createIsOpen}
+          onOpenChange={(isOpen) => setCreateIsOpen(isOpen)}
+        >
           <SheetContent>
             <SheetHeader>
               <SheetTitle>Create a new User</SheetTitle>
               <SheetDescription>
                 After creating it you will be able to see it.
               </SheetDescription>
-              <NewUserForm onUserCreatedSuccessfully={() => setCreateIsOpen(false)} />
+              <NewUserForm
+                onUserCreatedSuccessfully={() => setCreateIsOpen(false)}
+              />
             </SheetHeader>
           </SheetContent>
         </Sheet>

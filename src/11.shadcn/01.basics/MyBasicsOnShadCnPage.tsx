@@ -1,12 +1,19 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils"
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 export const MyBasicsOnShadCnPage = () => {
   const className = cn(
-    "rounded-md px-4 py-2 font-medium",
-    false ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800"
+    'rounded-md px-4 py-2 font-medium',
+    'bg-gray-200 text-gray-800'
   );
 
   return (

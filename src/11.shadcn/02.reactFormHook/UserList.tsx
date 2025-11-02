@@ -1,12 +1,26 @@
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 import { useGetUsers } from './hooks/useUsers';
-import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from '@/components/ui/empty';
+import {
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+} from '@/components/ui/empty';
 import { Button } from '@/components/ui/button';
-import { ArrowUpRightIcon, User2Icon, Plus } from "lucide-react"
-export type UserListProps =
-  {
-    onShowCreate?: () => void,
-  }
+import { ArrowUpRightIcon, User2Icon, Plus } from 'lucide-react';
+export type UserListProps = {
+  onShowCreate?: () => void;
+};
 
 export const UserList = ({ onShowCreate }: UserListProps) => {
   const users = useGetUsers();
@@ -16,7 +30,7 @@ export const UserList = ({ onShowCreate }: UserListProps) => {
       <div>
         <h3>Loading...</h3>
       </div>
-    )
+    );
   }
 
   if (!users.data || users.data?.length === 0) {
@@ -48,15 +62,21 @@ export const UserList = ({ onShowCreate }: UserListProps) => {
           </a>
         </Button>
       </Empty>
-    )
+    );
   }
 
   return (
     <>
       <div>
-        <h1 className='text-3xl font-bold'>Your Users ({users.data?.length})</h1>
-        <div className='flex flex-row justify-end'>
-          <Button data-testid="AddUser" className='rounded-full' onClick={() => onShowCreate?.()}>
+        <h1 className="text-3xl font-bold">
+          Your Users ({users.data?.length})
+        </h1>
+        <div className="flex flex-row justify-end">
+          <Button
+            data-testid="AddUser"
+            className="rounded-full"
+            onClick={() => onShowCreate?.()}
+          >
             <Plus />
           </Button>
         </div>
@@ -65,8 +85,8 @@ export const UserList = ({ onShowCreate }: UserListProps) => {
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px] font-bold">Id</TableHead>
-              <TableHead className='font-bold'>Full Name</TableHead>
-              <TableHead className='font-bold'>Age</TableHead>
+              <TableHead className="font-bold">Full Name</TableHead>
+              <TableHead className="font-bold">Age</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -83,5 +103,3 @@ export const UserList = ({ onShowCreate }: UserListProps) => {
     </>
   );
 };
-
-

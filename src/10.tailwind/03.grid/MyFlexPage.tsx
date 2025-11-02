@@ -15,5 +15,5 @@ export const MyGridPage = () => {
         <p>This is small 5</p>
       </div>
     </section>
-  )
-}
+  );
+};
