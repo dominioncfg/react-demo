@@ -67,4 +67,4 @@ Tailwind:
 Shadcn
     -> Setup & Basics - Done
     -> cn() method - Done
-    -> React Form Hook - 
+    -> React Form Hook - Done

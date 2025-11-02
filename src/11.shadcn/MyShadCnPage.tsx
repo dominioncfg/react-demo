@@ -1,9 +1,9 @@
-import { MyReactFormHookShadAndCn } from "./02.reactFormHook/02.formWithReactFormHook";
+import { MyChadCnReactFormHookQueryApp } from "./02.reactFormHook/MyChadCnReactFormHookQueryApp";
 
 export const MyShadCnPage = () => {
   return (
     <div>
-      <MyReactFormHookShadAndCn />
+      <MyChadCnReactFormHookQueryApp />
     </div>
   );
 };
